@@ -13,23 +13,25 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
             var message = $("textarea#message").val();
+            var _gotcha = $("input#_gotcha").val();
+            var _subject = $("input#_subject").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
+                url: "//formspree.io/pascalgermain@me.com",
+                method: "POST",
                 data: {
                     name: name,
-                    phone: phone,
                     email: email,
-                    message: message
+                    message: message,
+                    _gotcha: _gotcha,
+                    _subject: _subject
                 },
-                cache: false,
+                dataType: "json",
                 success: function() {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
