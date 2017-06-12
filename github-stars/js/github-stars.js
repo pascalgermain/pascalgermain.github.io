@@ -15,6 +15,14 @@ const app = new Vue({
     }
   },
   methods: {
+    getQueryParam (name) {
+      name = name.replace(/[\[\]]/g, '\\$&')
+      const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)')
+      const results = regex.exec(window.location.href)
+      if (!results) return null
+      if (!results[2]) return ''
+      return decodeURIComponent(results[2].replace(/\+/g, ' '))
+    },
     fetchStats (callback) {
       const xhr = new XMLHttpRequest()
       xhr.open('GET', this.apiUrl)
@@ -35,8 +43,11 @@ const app = new Vue({
       })
     }
   },
+  created () {
+    this.always = this.getQueryParam('always') !== null
+  },
   mounted () {
-    $.event.special.debouncedresize.threshold = 250;
+    $.event.special.debouncedresize.threshold = 250
     google.load('visualization', '1.1', {packages: ['line']})
     google.setOnLoadCallback(this.drawChart)
   }
