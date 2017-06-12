@@ -2,7 +2,8 @@ const app = new Vue({
   el: '#app',
   data: {
     stats: [],
-    always: true
+    always: false,
+    loaded: false
   },
   computed: {
     apiUrl () {
@@ -33,6 +34,7 @@ const app = new Vue({
       xhr.send()
     },
     drawChart () {
+      if (!this.loaded) return
       this.fetchStats(() => {
         const data = google.visualization.arrayToDataTable(this.stats)
         const chart = new google.charts.Line(this.$refs.chart)
@@ -49,6 +51,9 @@ const app = new Vue({
   mounted () {
     $.event.special.debouncedresize.threshold = 250
     google.load('visualization', '1.1', {packages: ['line']})
-    google.setOnLoadCallback(this.drawChart)
+    google.setOnLoadCallback(() => {
+      this.loaded = true
+      this.drawChart()
+    })
   }
 })
