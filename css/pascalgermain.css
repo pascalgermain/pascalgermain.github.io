@@ -1,101 +1,101 @@
 body,
 input {
-	font-family: Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 body {
-	margin: 0;
-	background: #333;
-	color: #fff;
-	text-align: center;
+  margin: 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
 }
 
 .left {
-	float: left;
+  float: left;
 }
 
 .right {
-	float: right;
+  float: right;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 p,
 form {
-	display: inline;
+  display: inline;
 }
 
 header {
-	display: inline-block;
-	margin: 200px 0 48px;
-	font-size: 18px;
-	line-height: 24px;
+  display: inline-block;
+  margin: 200px 0 48px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 header img {
-	width: 60px;
-	height: 60px;
-	margin-right: 10px;
-	border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 h1 {
-	margin: 0;
-	font-size: 30px;
-	line-height: 35px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 35px;
 }
 
 .bar {
-	background: #ed8133 url(/img/bar.png) repeat-x top;
-	border-top: 2px solid #fe8f45;
-	border-bottom: 2px solid #b54901;
+  background: #ed8133 url(/img/bar.png) repeat-x top;
+  border-top: 2px solid #fe8f45;
+  border-bottom: 2px solid #b54901;
 }
 
 .bar > div {
-	padding: 18px 0;
-	font-size: 12px;
-	line-height: 16px;
-	color: #222;
-	white-space: nowrap;
+  padding: 18px 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #222;
+  white-space: nowrap;
 }
 
 input {
-	margin-left: 3px;
-	padding: 2px;
+  margin-left: 3px;
+  padding: 2px;
 }
 
 input[type="submit"] {
-	width: 64px;
-	height: 24px;
-	vertical-align: middle;
-	border: 0;
-	padding-bottom: 4px;
-	background: url(/img/submit.png);
-	font-size: 13px;
-	color: #fff;
-	text-align: center;
-	text-shadow: 1px 1px 1px #111;
-	cursor: pointer;
+  width: 64px;
+  height: 24px;
+  vertical-align: middle;
+  border: 0;
+  padding-bottom: 4px;
+  background: url(/img/submit.png);
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 1px #111;
+  cursor: pointer;
 }
 
 main {
-	display: inline-block;
-	margin-top: 36px;
+  display: inline-block;
+  margin-top: 36px;
 }
 
 main ul {
-	padding: 2px 0 0 20px;
-	list-style: none;
-	text-align: left;
+  padding: 2px 0 0 20px;
+  list-style: none;
+  text-align: left;
 }
 
 main a {
-	font-size: 14px;
-	color: #bbb;
+  font-size: 14px;
+  color: #bbb;
 }
 
 main a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
