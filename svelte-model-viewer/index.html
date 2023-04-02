@@ -6,37 +6,69 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.46cd3bad.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.037a677b.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.dcb25641.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.7f12ae9f.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.b1c8496b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.27a333ec.js">
+		<link href="./_app/immutable/assets/_layout.32d61e29.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page.4f1e9ba5.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.4f7bb6ea.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.43ed0592.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.9d5ae992.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.300a7851.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.7b827840.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.46979f00.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.ts.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.f796002e.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.512ad6e3.js">
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" data-theme="skeleton">
 		<div style="display: contents">
 
 
-<div class="flex flex-col"><div class="select-none cursor-move"><img src="./images/MaisonArchi/0-1920.jpg" style="transform: scale(1)" alt="" class="pointer-events-none"></div>
+<div class="flex flex-col items-center"><div class="overflow-hidden select-none cursor-move"><img src="./images/MaisonArchi/0-1920.jpg" alt="" class="pointer-events-none" style="transform: scale(1)"></div>
 
-	<div class="relative inline-flex flex-col gap-6 my-6 mx-auto"><div><div>Image : 0</div>
-			<div class="inline-flex gap-1 select-none"><button>-</button>
-				<input type="range" max="28" value="0">
-				<button>+</button></div></div>
+	<ul class="flex flex-col gap-6 my-6 card p-6 variant-soft-secondary"><li><div class="flex justify-between items-center"><div class="font-bold capitalize">image</div>
+					<div class="text-xs">0 / 28</div></div>
 
-		<div><div>Zoom : 0</div>
-			<div class="inline-flex gap-1 select-none"><button>-</button>
-				<input type="range" max="100" value="0">
-				<button>+</button></div></div></div></div>
+				<div class="flex gap-2 items-center mt-1 select-none"><button class="btn btn-sm variant-filled-secondary font-bold text-white">&lt;
+					</button>
+					<div class="range-slider space-y-2 mt-1" data-testid="range-slider">
+	
+
+	
+	<div class="range-content flex justify-center py-2">
+		<input type="range" id="0.5445051499439748" name="image" class="range-slider-input w-full h-2 accent-surface-900 dark:accent-surface-50" list="tickmarks-0.5445051499439748" aria-label="" min="0" max="28" step="1" value="0">
+
+		
+		</div>
+
+	
+	</div>
+					<button class="btn btn-sm variant-filled-secondary font-bold text-white">&gt;
+					</button></div>
+			</li><li><div class="flex justify-between items-center"><div class="font-bold capitalize">zoom</div>
+					<div class="text-xs">0 / 100</div></div>
+
+				<div class="flex gap-2 items-center mt-1 select-none"><button class="btn btn-sm variant-filled-secondary font-bold text-white">&lt;
+					</button>
+					<div class="range-slider space-y-2 mt-1" data-testid="range-slider">
+	
+
+	
+	<div class="range-content flex justify-center py-2">
+		<input type="range" id="0.39733085625741005" name="zoom" class="range-slider-input w-full h-2 accent-surface-900 dark:accent-surface-50" list="tickmarks-0.39733085625741005" aria-label="" min="0" max="100" step="1" value="0">
+
+		
+		</div>
+
+	
+	</div>
+					<button class="btn btn-sm variant-filled-secondary font-bold text-white">&gt;
+					</button></div>
+			</li></ul></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_jfqvju = {
+					__sveltekit_f06v = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -45,10 +77,10 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.037a677b.js"),
-						import("./_app/immutable/entry/app.b1c8496b.js")
+						import("./_app/immutable/entry/start.4f7bb6ea.js"),
+						import("./_app/immutable/entry/app.7b827840.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_jfqvju.element, {
+						kit.start(app, __sveltekit_f06v.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,
