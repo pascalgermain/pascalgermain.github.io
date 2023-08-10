@@ -1,7 +1,9 @@
 {
-	"name": "pascalgermain.github.io",
-	"type": "module",
-	"version": "0.0.1",
+	"name": "pascalgermain",
+	"version": "1.0.0",
+	"description": "Pascal Germain website.",
+	"author": "Pascal Germain <pascalgermain@me.com>",
+	"homepage": "https://pascalgermain.github.io",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
@@ -20,5 +22,6 @@
 		"prettier": "^3.0.1",
 		"prettier-plugin-astro": "^0.11.0",
 		"prettier-plugin-tailwindcss": "^0.4.1"
-	}
+	},
+	"type": "module"
 }
