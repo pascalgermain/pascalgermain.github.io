@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Svelte Model Viewer</title>
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/2.4e67305a.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.a72a346e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.79341f4a.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.59aad282.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.821ff6f0.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.028404fb.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.1428e47c.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" data-theme="skeleton">
+		<div style="display: contents">
+
+
+<div class="container mx-auto my-6"><div class="flex flex-col items-center gap-6"><h1 class="text-secondary-700">Svelte Model Viewer</h1>
+
+		<div class="cursor-ew-resize select-none overflow-hidden"><img src="./images/MaisonArchi/0-1920.jpg" alt="" class="pointer-events-none" style="transform: scale(1)"></div>
+
+		<ul class="card variant-soft-secondary flex w-80 flex-col gap-6 p-6"><li><div class="flex items-center justify-between"><div class="font-bold capitalize">image</div>
+						<div class="text-xs">0 / 28</div></div>
+
+					<div class="mt-1 flex select-none items-center gap-2.5"><button class="btn btn-sm variant-filled-secondary font-bold text-white">&lt;
+						</button>
+						<input type="range" max="28" class="mt-1" value="0">
+						<button class="btn btn-sm variant-filled-secondary font-bold text-white">&gt;
+						</button></div>
+				</li><li><div class="flex items-center justify-between"><div class="font-bold capitalize">zoom</div>
+						<div class="text-xs">0 / 100</div></div>
+
+					<div class="mt-1 flex select-none items-center gap-2.5"><button class="btn btn-sm variant-filled-secondary font-bold text-white">&lt;
+						</button>
+						<input type="range" max="100" class="mt-1" value="0">
+						<button class="btn btn-sm variant-filled-secondary font-bold text-white">&gt;
+						</button></div>
+				</li></ul></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_voginz = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.a72a346e.js"),
+						import("./_app/immutable/entry/app.821ff6f0.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
