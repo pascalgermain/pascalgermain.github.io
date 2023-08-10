@@ -1,4 +1,5 @@
 ---
+import { apps } from '../data/apps'
 import Layout from '../layouts/Layout.astro'
 
 const title = 'Pascal Germain'
@@ -33,4 +34,29 @@ const description = 'Développeur web & mobile'
 			</div>
 		</div>
 	</form>
+
+	<main class="mt-[50px] inline-grid w-[640px] grid-cols-2 gap-5">
+		{
+			apps.map(({ name, slug, links }) =>
+				links.length ? (
+					<>
+						<div class="ml-auto flex h-[100px] w-[100px] items-start justify-center">
+							<img src={`/images/logo/${slug}.svg`} alt={name} class="max-h-[100px] max-w-[100px]" />
+						</div>
+						<ul class="pt-0.5 text-left text-sm text-gray-b">
+							{links.map(({ href, title }) => (
+								<li>
+									<a href={`/${slug}-${href}/`} target="_blank" class="underline hover:no-underline">
+										{name} {title}
+									</a>
+								</li>
+							))}
+						</ul>
+					</>
+				) : (
+					''
+				),
+			)
+		}
+	</main>
 </Layout>
