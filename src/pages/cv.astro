@@ -1,0 +1,63 @@
+---
+import { sections } from '../data/cv' // TODO: parse links
+import Layout from '../layouts/Layout.astro'
+
+const title = 'Pascal Germain - CV'
+---
+
+<Layout {title}>
+	<main class="mx-auto my-12 w-4/5 max-w-[1000px] space-y-6 rounded-[10px] bg-white p-5 text-left text-black">
+		{
+			sections.map(({ title, items }) =>
+				items.length ? (
+					<section>
+						<header class="bg-[#e0dfe3] pl-3 text-[11pt] font-bold uppercase">{title}</header>
+
+						<article class="grid grid-cols-[100px_auto] text-[8pt]">
+							{items.map(({ date, name, description, more: { text, bullets } }) => (
+								<>
+									<div class="text-center">{date}</div>
+
+									<div>
+										<div class="font-bold">{name}</div>
+
+										{description && (
+											<>
+												<div>{description}</div>
+												<br />
+											</>
+										)}
+
+										{text && <div>{text}</div>}
+
+										{bullets?.length ? (
+											<ul class="list-inside list-disc">
+												{bullets.map((bullet) => (
+													<li>{bullet}</li>
+												))}
+											</ul>
+										) : (
+											''
+										)}
+									</div>
+								</>
+							))}
+						</article>
+					</section>
+				) : (
+					''
+				),
+			)
+		}
+	</main>
+</Layout>
+
+<!-- <style>
+	a {
+		color: #00f;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+</style> -->
