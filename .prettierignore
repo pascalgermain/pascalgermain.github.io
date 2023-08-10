@@ -21,7 +21,7 @@ pnpm-debug.log*
 .DS_Store
 
 # static files
-public/
+static/
 
 # lock files
 pnpm-lock.yaml
